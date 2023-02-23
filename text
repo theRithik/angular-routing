@@ -1,0 +1,19 @@
+npm install -g @angular 
+
+
+ng version
+
+
+in folder
+ng new name
+
+
+run code .
+
+///this will create a server
+ng serve
+
+
+
+to generate a component we have to use 
+ng g c name

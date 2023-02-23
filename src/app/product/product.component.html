@@ -1,0 +1,43 @@
+<div class="container">
+<input type="text" class="form-control" [(ngModel)]="name">
+<button  (click)="onSave()">submit</button>
+</div>
+<input type="'text" (input)="check($event)">
+
+<br/>
+
+///////////ngIf
+<div>
+    <div *ngIf="name=='rithik'">Correct</div>
+    <ng-template>
+        wrong name
+    </ng-template>
+</div>
+
+<div>///////////////////ngFor</div>
+<div *ngFor="let color of colors">{{color}}</div>
+
+<div >////////////ngswitch</div>
+<input type="text" class="form-control" [(ngModel)]="num"/>
+<div [ngSwitch]="num">
+<div *ngSwitchCase="1">one</div>
+<div *ngSwitchCase="2">two</div>
+<div *ngSwitchCase="3">three</div>
+<div *ngSwitchDefault>default one</div>
+</div>
+
+<div>//////////////ngClass</div>
+<div [ngClass]="'text-danger fs-1'">String</div>
+<div [ngClass]="['text-danger','fs-2']">Number</div>
+<div [ngClass]="{'text-danger':'toCheck', 'fs-2':false}">rithik</div>
+<div [ngClass]="value > 10 ?'text-danger':'fs-1'">123</div>
+
+<div>/////////////ngstyle</div>
+<input type="text" [(ngModel)]="useColor"/>
+<div [ngStyle]="{'background':useColor}">this color you have entered</div>
+
+
+
+<div >
+    {{product.name}}-{{product.id}}-{{product.value}}
+</div>
